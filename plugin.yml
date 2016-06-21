@@ -1,8 +1,10 @@
 name: Notchcraft
-version: 1-PR3
+version: 1.0.0
 main: org.pinecone.Notchcraft.Main
 author: buildcarter8
 description: plugin for NC 3.5
-commands:
+commands: 
   nc:
    description: Info for Notchcraft
+  ban:
+    description: Staff Only Command- Ban a player
