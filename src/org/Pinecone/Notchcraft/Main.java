@@ -3,17 +3,22 @@ package org.pinecone.Notchcraft;
 import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.pinecone.Notchcraft.Commands.NC_Command;
+import org.pinecone.Notchcraft.Listeners.PlayerListener;
+import org.pinecone.Notchcraft.Listeners.ServerListener;
 
 public class Main extends JavaPlugin
 {
 	public final Logger log = Logger.getLogger("Carter-Plugin");
-	public static String VERSION = "1-PR2";
+	public static String VERSION = "1-PR3";
 	public static Main plugin;
 	 public static final String COMMAND_PATH = "org.pinecone.Notchcraft.Commands";
 	  public static final String COMMAND_PREFIX = "Command_";
@@ -26,6 +31,9 @@ public class Main extends JavaPlugin
        public void onEnable()
        {
     	 log.info("Notchcraft Version " + VERSION + " has been enabled");
+    	 final PluginManager pm = Bukkit.getServer().getPluginManager();
+         pm.registerEvents(new PlayerListener(), this);
+         pm.registerEvents(new ServerListener(), this);
        }
      public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 	    {
