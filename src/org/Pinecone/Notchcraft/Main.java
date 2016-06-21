@@ -13,9 +13,9 @@ import org.pinecone.Notchcraft.Commands.NC_Command;
 public class Main extends JavaPlugin
 {
 	public final Logger log = Logger.getLogger("Carter-Plugin");
-	public static String VERSION = "1 PRE RELEASE 1";
+	public static String VERSION = "0.0.1";
 	public static Main plugin;
-	 public static final String COMMAND_PATH = "org.Pinecone.Notchcraft.Commands";
+	 public static final String COMMAND_PATH = "org.pinecone.Notchcraft.Commands";
 	  public static final String COMMAND_PREFIX = "Command_";
 	  
 	  @Override
