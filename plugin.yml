@@ -1,0 +1,8 @@
+name: Notchcraft
+version: 1-PR1
+author: buildcarter8
+description: plugin for NC 3.5
+main: org.pinecone.Notchcraft.main
+commands:
+  nc:
+   description: Info for Notchcraft
