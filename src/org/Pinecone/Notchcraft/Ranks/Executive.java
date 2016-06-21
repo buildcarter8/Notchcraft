@@ -5,5 +5,5 @@ import java.util.List;
 
 public class Executive 
 {
-	public static List<String> executive = Arrays.asList("Tapster", "Gobomo");
+	public static List<String> executive = Arrays.asList("Tapster", "Gobomo", "Herouran");
 }
