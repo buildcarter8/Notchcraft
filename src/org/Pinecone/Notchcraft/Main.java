@@ -18,8 +18,9 @@ import org.pinecone.Notchcraft.Listeners.ServerListener;
 public class Main extends JavaPlugin
 {
 	public final Logger log = Logger.getLogger("Carter-Plugin");
-	public static String VERSION = "1-PR3";
+	public static String VERSION = "1.0.0";
 	public static Main plugin;
+	public static String NOPE = ChatColor.RED + "You do not have the correct rank to use this command";
 	 public static final String COMMAND_PATH = "org.pinecone.Notchcraft.Commands";
 	  public static final String COMMAND_PREFIX = "Command_";
 	  
