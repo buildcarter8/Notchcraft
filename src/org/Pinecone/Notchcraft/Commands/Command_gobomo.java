@@ -46,11 +46,11 @@ public class Command_gobomo extends NC_Command
 		        	target.getWorld().spawnEntity(TargetLocation, EntityType.BLAZE);
 		        }
 		
-		
+		}
 		
 		return true;
 	}
 
 
 	}
-}
+
