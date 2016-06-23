@@ -51,4 +51,6 @@ public class Command_gobomo extends NC_Command
 		return true;
 	}
 
+
+	}
 }
